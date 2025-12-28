@@ -1,6 +1,8 @@
 patch:
   "schema/name": "大易四改"
   "key_binder/bindings":
+    - { when: has_menu, accept: comma, send: comma }      #輸入,
+    - { when: has_menu, accept: period, send: period }    # 輸入.
     - { when: has_menu, accept: apostrophe, send: "Control+2" }      #輸入,
     - { when: has_menu, accept: bracketleft, send: "Control+3" }      #輸入,
     - { when: has_menu, accept: bracketright, send: "Control+4" }      #輸入,
